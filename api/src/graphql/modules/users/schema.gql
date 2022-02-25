@@ -1,0 +1,29 @@
+# Esse é nosso Type principal, com todos os campos
+type User {
+  _id: ID!
+  firstName: String!
+  lastName: String!
+  email: String
+  active: Boolean!
+}
+
+#Utilizamos o input para facilitar na inserção de tipos que iremos utilizar como parâmetros
+input UserInput {
+  firstName: String!
+  lastName: String!
+  email: String
+  active: Boolean!
+}
+
+# Serão nossas consultas, passamos parâmetros e o tipo de retorno
+type Query {
+  users: [User!]!
+  user(id: ID!): User!
+}
+
+# Basicamente o POST, PUT e DELETE
+type Mutation {
+  createUser(data: UserInput!): User!
+  updateUser(id: ID!, data: UserInput!): User!
+  deleteUser(id: ID!): Boolean
+}
