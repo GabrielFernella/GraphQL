@@ -10,8 +10,7 @@ const Schema = new mongoose.Schema({
     required: true
   },
   author: {
-    type: mongoose.Schema.Types.ObjectId, // id gerado pelo mongoose
-    ref: 'User',
+    type: mongoose.Schema.Types.ObjectId,
     required: true
   },
 })
