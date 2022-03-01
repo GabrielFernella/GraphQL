@@ -27,3 +27,38 @@ src{
 
 OBS: eu n estou usando a pasta graphql
 }
+
+query ExampleQuery{
+  contatos {
+    id,email,nome,password
+  }
+}
+
+mutation{
+  criarContato (
+    data: {
+      email: "daniel@gmail.com",
+      nome: "Daniel",
+      password: "123"
+    }
+  ){
+    id, nome
+  }
+
+  # atualizarContato (
+  #   id: $atualizarContatoId2
+  #   data: {
+  #     email: "gabrielfernella@gmail.com",
+  #     nome: "Fernella",
+  #     password: "123"
+  #   }
+  # ){
+  #   id, nome, email
+  # }
+
+  # deletarContato(
+  #   filtro: {
+  #     email: "gabrielfernella@gmail.com",
+  #   }
+  # )
+}
