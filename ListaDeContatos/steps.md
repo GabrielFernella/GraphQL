@@ -8,3 +8,22 @@
 7. yarn knex init  (gerar arquivo de configuração do knex)
 8. yarn knex migrate:make create_table_contato (criando a migration)
 9. yarn knex migrate:latest
+
+
+
+
+Modelo alternativo
+Developer  eu estou trabalhando com esse modelo
+src{
+    config = pasta de configs onde esta o arquivo q da merge nos types e resolvers
+
+    controller=  igual a pasta service so q eu to mais acostumado em usar o nome controller
+
+    database = igual a pasta db
+
+     model = igual a pasta modules 
+
+     server.js = igual seu arquivo index da pasta src, por costume eu uso o server
+
+OBS: eu n estou usando a pasta graphql
+}
