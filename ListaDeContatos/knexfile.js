@@ -7,15 +7,16 @@ module.exports = {
   client: 'pg',
     connection: {
       database: 'contacts',
-      user:     'docker',
-      password: 'docker'
+      user:     'postgres',
+      password: 'postgres'
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations',
+      directory: './src/db/migrations'
     }
   
 }

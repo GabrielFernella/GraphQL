@@ -6,4 +6,5 @@
 5. yarn add @graphql-tools/merge @graphql-tools/load-files
 6. yarn add knex pg
 7. yarn knex init  (gerar arquivo de configuração do knex)
-
+8. yarn knex migrate:make create_table_contato (criando a migration)
+9. yarn knex migrate:latest
