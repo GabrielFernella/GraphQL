@@ -1,7 +1,7 @@
 const UsuarioCadastroService = require('./UsuarioCadastroService')
 
-const services = {
-  usuarioCadastroService: UsuarioCadastroService
-}
+/*const services = {
+  UsuarioCadastroService
+}*/
 
-module.exports = {services}
+module.exports = { UsuarioCadastroService }
